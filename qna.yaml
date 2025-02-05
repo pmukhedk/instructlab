@@ -1,0 +1,64 @@
+version: 3
+domain: Python Devloper Hiring
+created_by: prasad
+seed_examples:
+  - context: |
+      A strong Python developer's resume should prominently feature relevant technical skills, projects, and experience with Python-based frameworks and libraries. While general Python proficiency is a baseline requirement, specialized libraries and frameworks signal deeper expertise within a specific domain.
+    questions_and_answers:
+      - question: |
+          What skills should you look for when identifying a Data Science & Machine Learning Python developer?
+        answer: |
+          Data preprocessing and analysis (Pandas, NumPy), Data visualization (Matplotlib, Seaborn), Machine learning model development (Scikit-learn), Deep learning (TensorFlow, PyTorch), Natural Language Processing (NLP) (spaCy, NLTK, Transformers), Big Data processing (Dask, PySpark).
+      - question: |
+          What libraries qualify an engineer as a Python developer?
+        answer: |
+          How can you identify candidates who have relevant skills but don't explicitly mention Python?
+      - question: |
+          What are some indicators of implicit Python expertise in a candidate's resume?
+        answer: |
+          Machine learning, AI, automation, or backend web development in job responsibilities, mentions of SQL, API development, or cloud deployments related to Python ecosystems, project descriptions mentioning Python-based frameworks and libraries, data pipelines, ETL workflows, cloud automation, and DevOps scripting, Jupyter Notebook, Apache Airflow, Kubernetes automation, or data engineering skills.
+  - context: |
+      Data Science and Machine Learning (ML) Python developers typically have experience in data processing, analysis, AI, and automation. Their resumes should highlight expertise in key areas such as data preprocessing and analysis using Pandas and NumPy, as well as data visualization with Matplotlib and Seaborn. Proficiency in machine learning model development with Scikit-learn and deep learning frameworks like TensorFlow and PyTorch is essential. Additionally, knowledge of Natural Language Processing (NLP) tools such as spaCy, NLTK, and Transformers is valuable. Developers working with large datasets should also be skilled in Big Data processing technologies like Dask and PySpark.
+    questions_and_answers:
+      - question: |
+          Can a candidate be considered a Python developer if their resume doesn't mention Python specifically but mentions Django?
+        answer: |
+          Yes, a candidate can be considered a Python developer if their resume doesn't mention Python specifically but mentions Django. Django is a high-level Python web framework. It's virtually impossible to use Django without also using Python. Therefore, mentioning Django strongly implies Python proficiency. While it's possible (though highly unlikely) they learned Django through some extremely unusual means without ever touching Python directly, it's a very strong signal they are a Python developer. You should definitely consider them as such and investigate further.
+      - question: |
+          Can a candidate be considered a Python developer if their resume doesn't mention Python specifically but mentions Pandas and NumPy?
+        answer: |
+          Yes, a candidate can very likely be considered a Python developer if their resume doesn't explicitly mention "Python" but mentions Pandas and NumPy. These are core libraries within the Python ecosystem, specifically used for data analysis and numerical computing. It's extremely unlikely someone would be proficient in using Pandas and NumPy without also having a solid foundation in Python. Their presence on a resume is a very strong indicator of Python skills, even if the language isn't explicitly named.
+      - question: |
+          Can a candidate be considered a Python developer if their resume doesn't mention Python specifically but mentions TensorFlow or PyTorch?
+        answer: |
+          Yes, a candidate can be considered a Python developer if their resume doesn't mention Python specifically but mentions TensorFlow or PyTorch. These are prominent deep learning frameworks exclusively used with Python. Mentioning them strongly suggests Python proficiency. While there's a tiny theoretical possibility of someone learning about these frameworks without ever writing Python code, in a real-world hiring scenario, it's safe to assume they are Python developers.
+  - context: |
+      Some candidates may possess relevant experience without explicitly mentioning "Python." These individuals can still be strong contenders. Look for:
+
+      ### **Key Indicators:**
+      - Experience with Python-based data analysis, ML, or web frameworks (even without explicitly naming Python).
+      - Mentions of specific libraries (**NumPy, Pandas, TensorFlow, Django, Flask**).
+      - Extensive backend development or data engineering experience using Python-centric tools.
+      - Open-source contributions, GitHub repositories, or Kaggle projects involving Python.
+      - Development and scripting experience with Python-compatible technologies (**SQL, REST APIs, cloud automation**).
+      - Hands-on experience with **DevOps, CI/CD pipelines, and automation scripts** (where Python is commonly used).
+    questions_and_answers:
+      - question: |
+          A candidate's resume mentions extensive experience with data engineering and ETL processes. They have also contributed to open-source projects related to data processing. While "Python" isn't explicitly mentioned, are these experiences indicative of potential Python proficiency, and why or why not?
+        answer: |
+          Yes, these experiences are strong indicators of potential Python proficiency. Data engineering and ETL processes often leverage Python libraries like Pandas and PySpark. Open-source contributions to data processing projects further suggest familiarity with Python, as it's a dominant language in that domain.
+      - question: |
+          A resume highlights experience in backend web development, specifically mentioning expertise in building RESTful APIs and integrating with SQL databases. The candidate also lists experience with cloud automation tools like Ansible. Could this candidate be a Python developer even if Python isn't explicitly stated, and what aspects of their experience suggest this?
+        answer: |
+          Yes, this candidate could very well be a Python developer. Python frameworks like Flask and Django are commonly used for backend web development and API creation. Integration with SQL databases is also frequently done using Python libraries like SQLAlchemy. Ansible, while not Python-exclusive, often uses Python for scripting and automation, making it another potential indicator. While not definitive, these skills strongly suggest Python experience.
+      - question: |
+          A candidate has a strong portfolio of Kaggle projects focused on machine learning and data analysis. Their resume emphasizes their skills in data visualization and model building. While the resume doesn't say "Python," should this candidate be considered for a Python developer role, and what elements of their experience are relevant?
+        answer: |
+          Yes, this candidate should definitely be considered for a Python developer role. Kaggle projects in machine learning and data analysis almost invariably involve Python. Data visualization and model building are core components of these projects, and Python libraries like Pandas, NumPy, Scikit-learn, and Matplotlib are essential tools. The strong Kaggle portfolio is a very compelling indicator of Python expertise, even without explicit mention of the language.
+document_outline: |
+  Identifying Python developers by recognizing relevant frameworks, libraries, and skills, even without explicit mention of "Python" in the resume.
+document:
+  repo: https://github.com/pmukhedk/resume-processing
+  commit: cfdd0ee
+  patterns:
+    - python-skills.md
